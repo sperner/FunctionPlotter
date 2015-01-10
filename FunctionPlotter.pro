@@ -20,19 +20,13 @@
 
 
 QT       += core gui
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = FunctionPlotter
+
 TEMPLATE = app
 
-RESOURCES = plotter.qrc \
-    plotter.qrc
-
-SOURCES += main.cpp\
-        plotter.cpp
-
+SOURCES  += main.cpp plotter.cpp
 HEADERS  += plotter.h
-
 FORMS    += plotter.ui
-
+RESOURCES = plotter.qrc

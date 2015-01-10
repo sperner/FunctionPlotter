@@ -20,27 +20,19 @@
 
 
 QT       += core gui
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
-CONFIG += desginer plugin
 
 TARGET = FunctionPlotter
 TARGET = $$qtLibraryTarget($$TARGET)
-TEMPLATE = lib
-
-CONFIG += release
-
 target.path = $$[QT_INSTALL_PLUGINS]/designer
+
+CONFIG += desginer plugin release thread warn_on
+
+TEMPLATE  = lib
+
 INSTALLS += target
 
-RESOURCES = plotter.qrc \
-    plotter.qrc
-
-SOURCES += main.cpp\
-        plotter.cpp
-
+SOURCES  += main.cpp plotter.cpp
 HEADERS  += plotter.h
-
 FORMS    += plotter.ui
-
+RESOURCES = plotter.qrc
