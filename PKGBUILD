@@ -22,7 +22,7 @@ md5sums=('SKIP')
 build()
 {
         cd "$srcdir/$pkgname"
-	qmake FunctionPlotterPlugin.pro || return 1
+	qmake || return 1
 	make || return 1
 }
 
@@ -30,5 +30,5 @@ package()
 {
 	cd "$srcdir/$pkgname"
 	mkdir -p "$pkgdir"/usr/lib/qt/plugins/designer || return 1
-	cp libFunctionPlotter.so "$pkgdir"/usr/lib/qt/plugins/designer/ || return 1
+	cp libplotterplugin.so "$pkgdir"/usr/lib/qt/plugins/designer/ || return 1
 }

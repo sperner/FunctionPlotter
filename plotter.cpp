@@ -19,7 +19,6 @@
 
 
 #include "plotter.h"
-#include "ui_plotter.h"
 
 using namespace std;
 
@@ -376,7 +375,5 @@ void PlotSettings::adjustAxis(double &min, double &max, int &numTicks)
     min = std::floor(min / step) * step;
     max = std::ceil(max / step) * step;
 }
-
-
 
 

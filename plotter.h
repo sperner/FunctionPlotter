@@ -26,6 +26,7 @@
 #include <QMouseEvent>
 #include <QPixmap>
 #include <QStylePainter>
+#include <QStyleOptionFocusRect>
 #include <QToolButton>
 #include <QVector>
 #include <QWidget>

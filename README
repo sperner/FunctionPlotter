@@ -37,15 +37,10 @@ makepkg
 Qt-Creator:
 
 This project was developed using the Qt-Creator.
-In the package are two project files included.
-FunctionPlotter.pro
-	for compilation of an executable widget
-FunctionPlotterPlugin.pro
-	for compilation of a qt designer plugin
+Use FunctionPlotter.pro	for a QtDesigner PlugIn.
 
 
 Usage:
 
-	FunctionPlotter
-    or
-	[with QtDesigner]
+with QtDesigner
+copy 'libplotterplugin.so' to /usr/lib/{qt}/plugins/designer/
