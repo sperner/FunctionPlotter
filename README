@@ -1,0 +1,51 @@
+function plotter readme
+
+Overview:
+
+A customized Function Plotter Widget,
+written with use of the Qt Window Framework.
+
+The original Source is from
+"C++ GUI Programming with Qt 4, 2nd Edition"
+by Jasmin Blanchette & Mark Summerfield
+
+
+Author:
+
+Sven Sperner		<cethss@gmail.com>
+
+
+Checkout:
+
+git clone https://github.com/sperner/FunctionPlotter
+
+
+Compile (standard way):
+
+qmake
+make
+make install
+
+
+Compile (arch build system):
+
+cp PKGBUILD $anywhere
+cd $anywhere
+makepkg
+
+
+Qt-Creator:
+
+This project was developed using the Qt-Creator.
+In the package are two project files included.
+FunctionPlotter.pro
+	for compilation of an executable widget
+FunctionPlotterPlugin.pro
+	for compilation of a qt designer plugin
+
+
+Usage:
+
+	FunctionPlotter
+    or
+	[with QtDesigner]
